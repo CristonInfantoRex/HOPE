@@ -1,0 +1,15 @@
+package Day4.Leetcode;
+import java.util.*;
+public class LC1295 {
+    public int findNumbers(int[] nums) {
+        int count = 0;
+
+        for(int i: nums){
+            if(Integer.toString(i).length() % 2 == 0){
+                count++;
+            }
+        }
+
+        return count;
+    }
+}
